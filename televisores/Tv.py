@@ -46,7 +46,7 @@ class TV():
         self.estado = True
 
     def turnOff(self):
-        self.estado = false
+        self.estado = False
 
     def getEstado(self):
         return self.estado
