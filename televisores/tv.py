@@ -1,5 +1,5 @@
 class TV:
-    _numTV=0
+    _numTV = 0
 
     def __init__(self, marca, estado):
         self._marca = marca 
@@ -33,7 +33,15 @@ class TV:
             self._canal = canal
         else:
             pass
-
+        
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
+    
+    @classmethod
+    def setnumTV(cls, numTV):
+        cls._numTV = numTV
+        
     def getVolumen(self):
         return self._volumen
     def setVolumen(self, volumen):
@@ -63,12 +71,8 @@ class TV:
     def volumenDown(self):
         if(self._estado == True and self._volumen>1):
             self._volumen-=1
+            
     
-    @classmethod
-    def getNumTV(cls):
-        return cls._numTV
-    @classmethod
-    def setnumTV(cls, numTV):
-        cls._numTV =numTV
+    
     
 
