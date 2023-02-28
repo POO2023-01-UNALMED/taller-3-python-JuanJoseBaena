@@ -1,5 +1,5 @@
 class Marca:
-    def __innit__(self, nombre):
+    def __init__(self, nombre):
         self._nombre = nombre
 
     def setNombre (self, nombre):
