@@ -1,4 +1,4 @@
-class Control():
+class Control:
     def __innit__(self):
         self._tv=None
 

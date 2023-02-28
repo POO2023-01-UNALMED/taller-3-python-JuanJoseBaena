@@ -1,4 +1,4 @@
-class TV():
+class TV:
     _numTV=0
 
     def __innit__(self, marca, estado):
